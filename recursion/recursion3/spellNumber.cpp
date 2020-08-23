@@ -20,8 +20,17 @@ void spell(int num){
     cout<<spellArray[digit]<<" ";
 }
 
+int stringToInteger(string number,int n){
+    if(n==0){
+        return 0;
+    }
+    int digit=number[n-1]-'0';
+    int a=stringToInteger(number,n-1);
+    return a*10+digit;
+}
+
 int32_t main(){
-    spell(2048);
-    cout<<"\n";
+    int x=stringToInteger("2048",4);
+    cout<<x<<"\n"<<x+5;
     return 0;
 }
