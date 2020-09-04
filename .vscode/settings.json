@@ -26,6 +26,8 @@
         "list": "cpp",
         "map": "cpp",
         "string_view": "cpp",
-        "unordered_map": "cpp"
+        "unordered_map": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp"
     }
 }
