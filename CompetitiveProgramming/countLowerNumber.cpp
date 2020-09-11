@@ -13,7 +13,7 @@ using namespace std;
         sort(nums.begin(),nums.end(),greater<int>());
         unordered_map<int,int> maps;
         maps.insert(make_pair(1,1));
-        pair x=maps.find(10);
+        auto x=maps.find(10);
         int i=x->second;
     }
 

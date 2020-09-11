@@ -28,6 +28,7 @@
         "string_view": "cpp",
         "unordered_map": "cpp",
         "algorithm": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "ostream": "cpp"
     }
 }
