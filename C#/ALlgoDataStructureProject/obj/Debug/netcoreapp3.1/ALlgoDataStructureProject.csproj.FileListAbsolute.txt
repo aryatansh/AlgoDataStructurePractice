@@ -1,0 +1,12 @@
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/bin/Debug/netcoreapp3.1/ALlgoDataStructureProject.deps.json
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/bin/Debug/netcoreapp3.1/ALlgoDataStructureProject.runtimeconfig.json
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/bin/Debug/netcoreapp3.1/ALlgoDataStructureProject.runtimeconfig.dev.json
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/bin/Debug/netcoreapp3.1/ALlgoDataStructureProject.dll
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/bin/Debug/netcoreapp3.1/ALlgoDataStructureProject.pdb
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.csprojAssemblyReference.cache
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.AssemblyInfoInputs.cache
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.AssemblyInfo.cs
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.csproj.CoreCompileInputs.cache
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.dll
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.pdb
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.genruntimeconfig.cache
