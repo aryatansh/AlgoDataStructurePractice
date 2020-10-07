@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{885887EC-EACD-418A-A170-48C4153AEC55}|Default">
   <MonoDevelop.Ide.ItemProperties.ALlgoDataStructureProject PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataStructure/HashTable.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataStructure/LinkedList/LinkedList.cs">
     <Files>
       <File FileName="Program.cs" Line="2" Column="1" />
-      <File FileName="DataStructure/HashTable.cs" Line="7" Column="10" />
+      <File FileName="DataStructure/LinkedList/LinkedList.cs" Line="28" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +11,9 @@
           <Node name="ALlgoDataStructureProject" expanded="True">
             <Node name="ALlgoDataStructureProject" expanded="True">
               <Node name="DataStructure" expanded="True">
-                <Node name="HashTable.cs" selected="True" />
+                <Node name="LinkedList" expanded="True">
+                  <Node name="LinkedList.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>

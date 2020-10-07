@@ -7,5 +7,6 @@
 
   <ItemGroup>
     <Folder Include="DataStructure\" />
+    <Folder Include="DataStructure\LinkedList\" />
   </ItemGroup>
 </Project>
