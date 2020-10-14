@@ -1,17 +1,21 @@
+//In priority queue when lhs and rhs is compared and returns true rhs go up in priority
+
+//If greater comparator is used it will return data in ascending order
 #include<iostream>
 #include<queue>
+#include<climits>
 
 using namespace std;
 struct CustomCompare
 {
     bool operator()(const int& lhs, const int& rhs)
     {
-        return lhs < rhs;
+        return rhs < lhs;
     }
 };
 
 int main(){
-    priority_queue<int,vector<int>,CustomCompare > a;
+    priority_queue<int,vector<int>,greater<int> > a;
     a.push(1);
     a.push(2);
     a.push(3);
@@ -27,7 +31,5 @@ int main(){
         cout<<a.top();
         a.pop();
     }
-    
-    
     return 0;
 }
