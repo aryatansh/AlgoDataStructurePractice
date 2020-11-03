@@ -8,5 +8,8 @@
   <ItemGroup>
     <Folder Include="DataStructure\" />
     <Folder Include="DataStructure\LinkedList\" />
+    <Folder Include="LeetCode\" />
+    <Folder Include="LeetCode\Easy\" />
+    <Folder Include="Sorting\" />
   </ItemGroup>
 </Project>

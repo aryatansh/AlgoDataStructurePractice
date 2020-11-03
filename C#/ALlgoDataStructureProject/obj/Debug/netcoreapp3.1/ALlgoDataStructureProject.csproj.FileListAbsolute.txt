@@ -9,3 +9,4 @@
 /Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.dll
 /Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.pdb
 /Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.genruntimeconfig.cache
+/Users/aryatsrivastava/Coding/ADS/ADSCode/AlgoDataStructure/C#/ALlgoDataStructureProject/obj/Debug/netcoreapp3.1/ALlgoDataStructureProject.csprojAssemblyReference.cache

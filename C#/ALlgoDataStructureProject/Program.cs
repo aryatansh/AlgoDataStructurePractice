@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using ALlgoDataStructureProject.LeetCode.Easy;
+using ALlgoDataStructureProject.Sorting;
 
 namespace ALlgoDataStructureProject
 {
@@ -7,18 +9,16 @@ namespace ALlgoDataStructureProject
     {
         static void Main(string[] args)
         {
-            Stack<int> a = new Stack<int>();
-            a.Push(2);
-            a.Push(3);
-            while (a.Count>0)
+
+            int[] a = { 4,5,2,1,3 };
+            Sort s = new Sort();
+            s.arr = a;
+            s.BubbleSort();
+            for (int i = 0; i < s.arr.Length; i++)
             {
-                Console.WriteLine(a.Pop());
-                
+                Console.WriteLine(s.arr[i]);
             }
-            //T
-            Queue<int> x = new Queue<int>();
-           
-              
+
         }
     } 
 }
