@@ -1,21 +1,19 @@
 ﻿<Properties StartupConfiguration="{885887EC-EACD-418A-A170-48C4153AEC55}|Default">
   <MonoDevelop.Ide.ItemProperties.ALlgoDataStructureProject PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sorting/Sort.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pattern/StarPattern2.cs">
     <Files>
-      <File FileName="Program.cs" Line="20" Column="14" />
-      <File FileName="DataStructure/HashTable.cs" />
-      <File FileName="Sorting/Sort.cs" Line="38" Column="10" />
+      <File FileName="DataStructure/HashTable.cs" Line="1" Column="1" />
+      <File FileName="Sorting/Sort.cs" />
+      <File FileName="Pattern/StarPattern2.cs" Line="4" Column="27" />
+      <File FileName="Program.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ALlgoDataStructureProject" expanded="True">
             <Node name="ALlgoDataStructureProject" expanded="True">
-              <Node name="LeetCode" expanded="True">
-                <Node name="Easy" expanded="True" />
-              </Node>
-              <Node name="Sorting" expanded="True">
-                <Node name="Sort.cs" selected="True" />
+              <Node name="Pattern" expanded="True">
+                <Node name="StarPattern2.cs" selected="True" />
               </Node>
             </Node>
           </Node>

@@ -11,5 +11,7 @@
     <Folder Include="LeetCode\" />
     <Folder Include="LeetCode\Easy\" />
     <Folder Include="Sorting\" />
+    <Folder Include="Pattern\" />
   </ItemGroup>
+  
 </Project>
