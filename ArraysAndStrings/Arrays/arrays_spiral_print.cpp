@@ -25,12 +25,51 @@
 using namespace std;
 int main()
 {
-    int m = 4;
-    int n = 4;
-
-    for (int i = 0; i < n; i++)
+    int m = 0;
+    int n = 0;
+    cin >> m >> n;
+    int xstart = 0;
+    int xend = m - 1;
+    int ystart = 0;
+    int yend = n - 1;
+    int arr[m][n];
+    for (int i = 0; i < m; i++)
     {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> arr[i][j];
+        }
     }
-
+    while (xstart <= xend && ystart <= yend)
+    {
+        for (int i = xstart; i <= xend; i++)
+        {
+            cout << arr[i][ystart] << ", ";
+        }
+        ystart++;
+        for (int i = ystart; i <= yend; i++)
+        {
+            cout << arr[xend][i] << ", ";
+        }
+        xend--;
+        if (!(ystart > yend))
+        {
+            for (int i = xend; i >= xstart; i--)
+            {
+                cout << arr[i][yend] << ", ";
+                ;
+            }
+            yend--;
+        }
+        if (!(xstart > xend))
+        {
+            for (int i = yend; i >= ystart; i--)
+            {
+                cout << arr[xstart][i] << ", ";
+            }
+            xstart++;
+        }
+    }
+    cout << "END";
     return 0;
 }
