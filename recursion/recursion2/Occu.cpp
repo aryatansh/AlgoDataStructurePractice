@@ -19,7 +19,6 @@ int lastOcc(int *a, int n, int key){
         {
             return -1;
         }
-        
    }
    return i+1;
 }

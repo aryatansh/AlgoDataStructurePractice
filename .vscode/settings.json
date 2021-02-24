@@ -72,5 +72,6 @@
         "streambuf": "cpp",
         "system_error": "cpp",
         "tuple": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
