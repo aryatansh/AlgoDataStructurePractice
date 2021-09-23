@@ -1,0 +1,51 @@
+Question:-
+Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+
+We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+
+You must solve this problem without using the library's sort function.
+
+ 
+
+Example 1:
+
+Input: nums = [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]
+Example 2:
+
+Input: nums = [2,0,1]
+Output: [0,1,2]
+Example 3:
+
+Input: nums = [0]
+Output: [0]
+Example 4:
+
+Input: nums = [1]
+Output: [1]
+ 
+
+Constraints:
+
+n == nums.length
+1 <= n <= 300
+nums[i] is 0, 1, or 2.
+ 
+
+Follow up: Could you come up with a one-pass algorithm using only constant extra space?
+
+Solution:-
+1) Use any sorting algorithm
+2) Create a list of size 3 store count in the index.
+3) Sort using two pointers approach.
+        a) Take two pointers 
+               1)Pointer 0:- 1 plus first index of 0 (Starting position 0th indexx)
+               2)Pointer 2:- 1 minus last index of 2 (Starting position last index)
+        b) iterate from 0 to pointer 2 index(dont update index here, update it in steps. It is not updated here because in scenario 2 inside this it should not get updated.)
+               1) If value of index is 0 
+                    a) Swap value at index with pointer 0 value
+                    b) update the value of iterator
+               2) If value of index is 2
+                    a) Swap value at index with pointer 2 value
+               3) In all other case 
+                    a) increament the iterator
