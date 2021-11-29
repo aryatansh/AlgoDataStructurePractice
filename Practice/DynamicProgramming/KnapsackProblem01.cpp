@@ -37,7 +37,7 @@ int solve(vector<int> &A, vector<int> &B, int C)
 }
 
 //Iteration -Bottom UP Dp
-solveIteratively(vector<int> &A, vector<int> &B, int C)
+int solveIteratively(vector<int> &A, vector<int> &B, int C)
 {
     int **arr = new int *[A.size() + 1];
     for (int i = 0; i < A.size() + 1; i++)
