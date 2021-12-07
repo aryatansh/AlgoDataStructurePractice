@@ -1,7 +1,6 @@
 public
 class Solution
 {
-public
     int FindDuplicate(int[] nums)
     {
         int i = 0;
