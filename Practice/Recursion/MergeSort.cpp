@@ -1,15 +1,14 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
-void merge(int *a, int s, int e)
+void merge(vector<int> &a, int s, int mid, int e)
 {
-    int mid = (s + e) / 2;
     int i = s;
     int j = mid + 1;
     int k = s;
 
-    int temp[100];
+    int temp[a.size()];
     while (i <= mid && j <= e)
     {
         if (a[i] < a[j])
@@ -36,29 +35,25 @@ void merge(int *a, int s, int e)
     }
 }
 
-void mergeSort(int a[], int s, int e)
+void mergeSort(vector<int> &a, int s, int e)
 {
     if (s >= e)
     {
         return;
     }
-
     int mid = (s + e) / 2;
-    mergeSort(a, s, mid);
+    mergeSort(a, 0, mid);
     mergeSort(a, mid + 1, e);
-    merge(a, s, e);
+    merge(a, s, mid, e);
 }
 
 int main()
 {
-
-    int arr[] = {3, 4, 1, 5, 6, 2};
-    int n = 6;
-    mergeSort(arr, 0, n - 1);
-    for (int i = 0; i < n; i++)
+    vector<int> a = {5, 4, 3, 2, 1};
+    mergeSort(a, 0, a.size() - 1);
+    for (int i = 0; i < a.size(); i++)
     {
-        cout << arr[i] << endl;
+        cout << a[i] << " ";
     }
-
     return 0;
 }

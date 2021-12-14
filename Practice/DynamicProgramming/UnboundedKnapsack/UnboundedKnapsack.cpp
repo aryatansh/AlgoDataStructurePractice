@@ -5,55 +5,46 @@ using namespace std;
 
 class Knapsack
 {
-    //Top Down(Recursive)
-private:
-    int solveRec(const vector<int> &profits, const vector<int> &weights, int capacity, int index, int **cache)
-    {
-        if (index == profits.size())
-        {
-            return 0;
-        }
-        if (capacity == 0)
-        {
-            cache[index][capacity] = 0;
-        }
-        if (cache[index][capacity] != -1)
-        {
-            return cache[index][capacity];
-        }
-        int weight = weights[index];
-        int maxProfit = 0;
-        for (int i = 0; i * weight <= capacity; i++)
-        {
-            int currentWeight = i * weight;
-            int profit = (i * profits[index]) + solveRec(profits, weights, capacity - currentWeight, index + 1, cache);
-            maxProfit = max(profit, maxProfit);
-        }
-        return cache[index][capacity] = maxProfit;
-    }
-
-    //Iterative
-    int solveIterative(const vector<int> &profits, const vector<int> &weights, int capacity)
-    {
-    }
 
 public:
     int solveKnapsack(const vector<int> &profits, const vector<int> &weights, int capacity)
     {
-        int **cache = new int *[profits.size() + 1];
-        for (int i = 0; i <= profits.size(); i++)
-        {
-            cache[i] = new int[capacity + 1];
-            for (int j = 0; j <= capacity; j++)
-            {
-                cache[i][j] = -1;
-            }
-        }
-        if (capacity == 0 || profits.size() == 0)
+        vector<vector<int>> dp(profits.size(), vector<int>(capacity + 1));
+        return this->knapsackRecursive(dp, profits, weights, capacity, 0);
+    }
+
+private:
+    int knapsackRecursive(vector<vector<int>> &dp, const vector<int> &profits,
+                          const vector<int> &weights, int capacity, int currentIndex)
+    {
+
+        // base checks
+        if (capacity <= 0 || profits.empty() || weights.size() != profits.size() ||
+            currentIndex >= profits.size())
         {
             return 0;
         }
-        return solveRec(profits, weights, capacity, 0, cache);
+
+        // check if we have not already processed a similar sub-problem
+        if (!dp[currentIndex][capacity])
+        {
+            // recursive call after choosing the items at the currentIndex, note that we
+            // recursive call on all items as we did not increment currentIndex
+            int profit1 = 0;
+            if (weights[currentIndex] <= capacity)
+            {
+                profit1 =
+                    profits[currentIndex] +
+                    knapsackRecursive(dp, profits, weights, capacity - weights[currentIndex], currentIndex);
+            }
+
+            // recursive call after excluding the element at the currentIndex
+            int profit2 = knapsackRecursive(dp, profits, weights, capacity, currentIndex + 1);
+
+            dp[currentIndex][capacity] = max(profit1, profit2);
+        }
+
+        return dp[currentIndex][capacity];
     }
 };
 

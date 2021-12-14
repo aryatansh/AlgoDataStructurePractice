@@ -31,7 +31,7 @@ int solveRecursive(vector<int> &A, int B, int i, int **arr)
 }
 int solve(vector<int> &A, int B)
 {
-    int **arr = new int *[A.size() + 1];
+    fo int **arr = new int *[A.size() + 1];
     for (int i = 0; i < A.size() + 1; i++)
     {
         arr[i] = new int[B + 1];
