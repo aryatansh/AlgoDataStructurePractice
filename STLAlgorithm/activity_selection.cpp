@@ -23,7 +23,7 @@
 // Person can only do 0th and 2nd activities.
 
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
 struct Activity
@@ -39,6 +39,8 @@ bool activityCompare(Activity s1, Activity s2)
 
 void printMaxActivitiesCount(Activity arr[], int n)
 {
+    vector<int> v;
+    reverse(v.)
     // Sort jobs according to finish time
     sort(arr, arr + n, activityCompare);
 

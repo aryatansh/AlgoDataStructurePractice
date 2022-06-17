@@ -97,23 +97,12 @@ int main()
             }
         }
     }
-    for (int i = 0; i < (A.size() + 1); i++)
-    {
-        for (int j = 0; j < B + 1; j++)
-        {
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
-    }
     for (int i = 1; i < A.size() + 1; i++)
     {
         for (int j = 1; j < B + 1; j++)
         {
             if (A[i - 1] <= j)
             {
-                cout << "called:" << i << " " << j << " ";
-                int k = arr[i - 1][j - A[i - 1]];
-                cout << k << " " << arr[i - 1][j] << endl;
                 arr[i][j] = max(arr[i - 1][j - A[i - 1]], arr[i - 1][j]);
             }
             else
@@ -122,15 +111,7 @@ int main()
             }
         }
     }
-    cout << endl;
-    for (int i = 0; i < A.size() + 1; i++)
-    {
-        for (int j = 0; j < B + 1; j++)
-        {
-            cout << arr[i][j] << " ";
-        }
-        cout << endl;
-    }
+    
     cout << arr[A.size()][B];
     return 0;
 }

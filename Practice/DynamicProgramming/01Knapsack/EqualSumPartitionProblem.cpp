@@ -1,4 +1,4 @@
-//DP WITH RECURSION
+// DP WITH RECURSION
 int canPartitionRec(vector<int> &nums, int s1, int s, int i, int **arr)
 {
     if (i >= nums.size())

@@ -44,7 +44,7 @@ int solveIteratively(vector<int> &A, vector<int> &B, C)
             int inc = 0;
             int exc = 0;
             if (B[i - 1] <= j)
-            {
+            {777
                 inc = A[i - 1] + cache[i - 1][j - B[i - 1]];
             }
             exc = cache[i - 1][j];
